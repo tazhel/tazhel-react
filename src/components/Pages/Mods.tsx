@@ -8,7 +8,7 @@ const Mods: React.FC = () => {
   return (
     <div className="content">
       <div className="logo">
-        <img width="180px" src="Eu4Logo.png" alt="Europa Universalis 4" />
+        <img width="180px" src="EU4Logo.png" alt="Europa Universalis 4" />
       </div>
       <div className="box">
         <a
