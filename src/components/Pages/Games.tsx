@@ -4,7 +4,9 @@ import LogoAnim from '../Logo/LogoAnim.svg';
 const Games: React.FC = () => {
   return (
     <div className="content">
-      <object width="320px" height="180px" type="image/svg+xml" data={LogoAnim}>LogoAnim</object>
+      <object width="320px" height="180px" type="image/svg+xml" data={LogoAnim}>
+        LogoAnim
+      </object>
       <iframe
         title="Steam No Escape"
         src="https://store.steampowered.com/widget/667060/"

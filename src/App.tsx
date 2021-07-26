@@ -3,7 +3,7 @@ import TopBar from './components/Navigation/TopBar';
 import BottomBar from './components/Navigation/BottomBar';
 import Intro from './components/Pages/Intro';
 import Games from './components/Pages/Games';
-import Projects from './components/Pages/Projects';
+import Mods from './components/Pages/Mods';
 import About from './components/Pages/About';
 import Martin from './components/Pages/Martin';
 import useTazhelContext from './context/tazhelContext';
@@ -18,7 +18,7 @@ function App() {
           {
             0: <Intro />,
             1: <Games />,
-            2: <Projects />,
+            2: <Mods />,
             3: <About />,
             4: <Martin />,
           }[page]

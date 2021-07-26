@@ -5,10 +5,13 @@ import useTazhelContext from '../../context/tazhelContext';
 const TopBar: React.FC = () => {
   const { setPage } = useTazhelContext();
 
+  const handleIntro = () => {
+    setPage(0);
+  };
   const handleGames = () => {
     setPage(1);
   };
-  const handleProjects = () => {
+  const handleMods = () => {
     setPage(2);
   };
   const handleAbout = () => {
@@ -20,16 +23,23 @@ const TopBar: React.FC = () => {
 
   return (
     <div className="topbar">
-      <div className="topbar-logo">
-        <object height="72px" type="image/svg+xml" data={LogoAnim}>LogoAnim</object>
+      <div className="topbar-logo" onClick={() => handleIntro()}>
+        <object
+          className="topbar-logo-object"
+          height="72px"
+          type="image/svg+xml"
+          data={LogoAnim}
+        >
+          LogoAnim
+        </object>
       </div>
       <div className="topbar-pages">
         <div className="topbar-page" onClick={() => handleGames()}>
           GAMES
         </div>
 
-        <div className="topbar-page" onClick={handleProjects}>
-          PROJECTS
+        <div className="topbar-page" onClick={handleMods}>
+          MODS
         </div>
 
         <div className="topbar-page" onClick={handleAbout}>
@@ -42,6 +52,7 @@ const TopBar: React.FC = () => {
       </div>
       <style jsx>{`
         .topbar {
+          width: 100vw;
           height: 72px;
           color: white;
           display: flex;
@@ -50,7 +61,9 @@ const TopBar: React.FC = () => {
         }
         .topbar-logo {
           cursor: pointer;
-          z-index: 100000;
+        }
+        .topbar-logo-object {
+          pointer-events: none;
         }
         .topbar-pages {
           display: flex;

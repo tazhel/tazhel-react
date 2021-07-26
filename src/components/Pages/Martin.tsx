@@ -5,7 +5,7 @@ const Martin: React.FC = () => {
     <div className="content">
       <div className="box">
         <img className="logo" width="280px" src="Martin.jpg" alt="Martin Helvig" />
-        <div className="txt">
+        <div className="text">
           Hi, I am Martin Helvig, a game developer and founder of Tazhel
           <p />
           Currently I work at Bouvet in Norway, where I work on future tech like HoloLens
@@ -23,7 +23,7 @@ const Martin: React.FC = () => {
         .content {
           display: flex;
           justify-content: center;
-          margin: 16px 0px;
+          margin: 64px 0px;
           background-color: #222222;
           color: white;
         }
@@ -40,7 +40,7 @@ const Martin: React.FC = () => {
           border: none;
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
-        .txt {
+        .text {
           margin: 24px 0px 24px 24px;
           text-align: left;
         }

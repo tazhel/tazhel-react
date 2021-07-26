@@ -5,7 +5,7 @@ const TopBar: React.FC = () => {
     <div className="bottombar">
       <div className="bottombar-line"></div>
       <div className="bottombar-content">
-        <div className="bottombar-txt">Tazhel™</div>
+        <div className="bottombar-text">Tazhel™</div>
       </div>
       <style jsx>{`
         .bottombar {
@@ -25,7 +25,7 @@ const TopBar: React.FC = () => {
           justify-content: space-evenly;
           margin: 16px 0px;
         }
-        .bottombar-txt {
+        .bottombar-text {
           margin: 0px 16px;
         }
       `}</style>

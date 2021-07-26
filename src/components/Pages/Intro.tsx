@@ -4,9 +4,8 @@ const Intro: React.FC = () => {
   return (
     <div className="intro">
       <iframe
-        width="100%"
-        height="720px"
-        src="https://www.youtube.com/embed/HagSECM08yE"
+        className="youtube"
+        src="https://www.youtube.com/embed/HagSECM08yE?autoplay=1"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -14,7 +13,19 @@ const Intro: React.FC = () => {
       ></iframe>
       <style jsx>{`
         .intro {
-          background-color: #222222;
+          position: relative;
+          padding-bottom: 56.25%;
+          paddingtop: 25;
+          height: 0;
+        }
+        .youtube {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          max-width: 1920px;
+          height: 100%;
+          max-height: 1080px;
         }
       `}</style>
     </div>
