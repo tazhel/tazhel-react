@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="content">
-      <img className="logo" width="300px" src="Eu4Logo.png" alt="Europa Universalis 4" />
+      <img className="logo" width="180px" src="Eu4Logo.png" alt="Europa Universalis 4" />
       <div className="box">
         <a
           className="box-text"
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       </div>
       <img
         className="logo"
-        width="280px"
+        width="180px"
         src="WallpaperLogo.png"
         alt="Wallpaper Engine"
       />

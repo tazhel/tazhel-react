@@ -21,7 +21,7 @@ const TopBar: React.FC = () => {
   return (
     <div className="topbar">
       <div className="topbar-logo">
-        <object height="72px" type="image/svg+xml" data={LogoAnim}></object>
+        <object height="72px" type="image/svg+xml" data={LogoAnim}>LogoAnim</object>
       </div>
       <div className="topbar-pages">
         <div className="topbar-page" onClick={() => handleGames()}>
@@ -57,7 +57,7 @@ const TopBar: React.FC = () => {
           align-items: center;
         }
         .topbar-page {
-          margin: 0px 16px;
+          padding: 26px 16px;
           cursor: pointer;
           user-select: none;
         }
