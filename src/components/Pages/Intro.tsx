@@ -5,7 +5,7 @@ const Intro: React.FC = () => {
     <div className="intro">
       <iframe
         className="youtube"
-        src="https://www.youtube.com/embed/HagSECM08yE?autoplay=1"
+        src="https://www.youtube.com/embed/HagSECM08yE?autoplay=1&mute=1"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -21,7 +21,8 @@ const Intro: React.FC = () => {
         .youtube {
           position: absolute;
           top: 0;
-          left: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
           width: 100%;
           max-width: 1920px;
           height: 100%;
