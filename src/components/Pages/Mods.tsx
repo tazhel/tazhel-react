@@ -43,7 +43,7 @@ const Mods: React.FC = () => {
         >
           States UI for Europa Universalis 4
         </a>
-        <img className="box-image" src="EU4Expand.jpg" alt="ExpandUI" width="200px"></img>
+        <img className="box-image" src="EU4States.jpg" alt="ExpandUI" width="200px"></img>
         <div className="box-image-text">
           In this mod you can view the province, states, <br />
           institution and building simultaneously. <br />
@@ -69,7 +69,12 @@ const Mods: React.FC = () => {
         >
           Earth in the big Universe for Wallpaper Engine
         </a>
-        <img className="box-image" src="EU4Expand.jpg" alt="ExpandUI" width="200px"></img>
+        <img
+          className="box-image"
+          src="WallpaperEarth.jpg"
+          alt="ExpandUI"
+          width="200px"
+        ></img>
         <div className="box-image-text">
           An animated background which has focus on <br />
           the earth while the sun is slowly entering and <br />
