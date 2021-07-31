@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoAnim from '../Logo/LogoAnim.svg';
 import { Link } from 'react-router-dom';
 import useTazhelContext from '../../context/tazhelContext';
-import { useEffect } from 'react';
 
 const TopBar: React.FC = () => {
   const { setPage, page } = useTazhelContext();
