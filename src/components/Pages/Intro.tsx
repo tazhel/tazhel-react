@@ -44,9 +44,7 @@ const Intro: React.FC = () => {
           left: 50%;
           transform: translate(-50%, 0);
           width: 100%;
-          max-width: 1920px;
           height: 100%;
-          max-height: 1080px;
         }
         .logo-news {
           position: relative;
