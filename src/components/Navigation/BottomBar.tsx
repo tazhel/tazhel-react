@@ -5,7 +5,13 @@ const TopBar: React.FC = () => {
     <div className="bottombar">
       <div className="bottombar-line"></div>
       <div className="bottombar-content">
+        <a href="/" className="bottombar-link">
+          Home
+        </a>
         <div className="bottombar-text">Tazhel™</div>
+        <a href="/" className="bottombar-hidden">
+          Home
+        </a>
       </div>
       <style jsx>{`
         .bottombar {
@@ -17,7 +23,7 @@ const TopBar: React.FC = () => {
         }
         .bottombar-line {
           height: 1px;
-          width: 100vw;
+          width: 100%;
           background-color: #ffffffdd;
         }
         .bottombar-content {
@@ -26,7 +32,25 @@ const TopBar: React.FC = () => {
           margin: 16px 0px;
         }
         .bottombar-text {
-          margin: 0px 16px;
+          margin: 0px 32px;
+          cursor: pointer;
+          user-select: none;
+          text-decoration: none;
+          color: white;
+        }
+        .bottombar-link {
+          margin: 0px 32px;
+          cursor: pointer;
+          user-select: none;
+          color: white;
+        }
+        .bottombar-hidden {
+          margin: 0px 32px;
+          cursor: pointer;
+          user-select: none;
+          text-decoration: none;
+          color: white;
+          visibility: hidden;
         }
       `}</style>
     </div>

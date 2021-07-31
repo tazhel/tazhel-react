@@ -93,7 +93,7 @@ const Mods: React.FC = () => {
       </div>
       <style jsx>{`
         .content {
-          margin: 16px 0px;
+          margin: 88px 0px 16px 0px;
           background-color: #222222;
           display: flex;
           justify-content: center;
@@ -146,7 +146,36 @@ const Mods: React.FC = () => {
         }
         .logo {
           margin: 24px 0px;
-          width: 644px;
+          width: 640px;
+        }
+        @media only screen and (max-width: 700px) {
+          .logo {
+            width: calc(100vw - 64px);
+          }
+          .box {
+            width: calc(100vw - 64px);
+          }
+          .box-image {
+            position: absolute;
+            visibility: hidden;
+          }
+          .box-image-text {
+            margin: 64px 0px 0px 64px;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .box {
+            height: 120px;
+          }
+          .box-image-text {
+            position: absolute;
+            visibility: hidden;
+          }
+          .box-button {
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: 68px 0px 20px 0px;
+          }
         }
       `}</style>
     </div>

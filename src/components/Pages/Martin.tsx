@@ -23,7 +23,7 @@ const Martin: React.FC = () => {
         .content {
           display: flex;
           justify-content: center;
-          margin: 64px 0px;
+          margin: 136px 0px 16px 0px;
           background-color: #222222;
           color: white;
         }
@@ -34,18 +34,32 @@ const Martin: React.FC = () => {
           color: white;
         }
         .logo {
-          margin: 8px 0px 16px 0px;
+          margin: 16px 18px 16px 24px;
           border-radius: 8px;
           border-style: none;
           border: none;
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
         .text {
-          margin: 24px 0px 24px 24px;
+          margin: 24px 24px 24px 18px;
           text-align: left;
         }
         .link {
           color: #53bddf;
+        }
+        @media only screen and (max-width: 600px) {
+          .content {
+            margin: 88px 0px 16px 0px;
+          }
+          .box {
+            width: 500px;
+            flex-direction: column;
+            align-items: center;
+            margin: 12px;
+          }
+          .text {
+            margin: 12px;
+          }
         }
       `}</style>
     </div>

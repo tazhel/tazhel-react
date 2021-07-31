@@ -8,11 +8,10 @@ const Games: React.FC = () => {
         LogoAnim
       </object>
       <iframe
+        className="steam"
         title="Steam No Escape"
         src="https://store.steampowered.com/widget/667060/"
         frameBorder="0"
-        width="646"
-        height="190"
       ></iframe>
       <style jsx>{`
         .content {
@@ -20,8 +19,17 @@ const Games: React.FC = () => {
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          margin: 16px 0px;
+          margin: 88px 0px 16px 0px;
           background-color: #222222;
+        }
+        .steam {
+          width: 646px;
+          height: 190px;
+        }
+        @media only screen and (max-width: 700px) {
+          .steam {
+            width: calc(100vw - 58px);
+          }
         }
       `}</style>
     </div>
