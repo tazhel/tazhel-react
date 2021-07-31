@@ -132,12 +132,15 @@ const TopBar: React.FC = () => {
           }
           .topbar-page-m {
             position: inherit;
-            padding: 26px 16px;
+            padding: 15px 16px;
             cursor: pointer;
             user-select: none;
             text-decoration: none;
             color: white;
             visibility: visible;
+          }
+          .topbar-page-m:hover {
+            color: orange;
           }
         }
       `}</style>
