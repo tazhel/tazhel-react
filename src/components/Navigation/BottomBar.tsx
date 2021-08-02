@@ -52,6 +52,11 @@ const TopBar: React.FC = () => {
           color: white;
           visibility: hidden;
         }
+        @media only screen and (max-width: 600px) {
+          .bottombar-link {
+            visibility: hidden;
+          }
+        }
       `}</style>
     </div>
   );
