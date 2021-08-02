@@ -43,6 +43,7 @@ const TopBar: React.FC = () => {
           cursor: pointer;
           user-select: none;
           color: white;
+          visibility: hidden;
         }
         .bottombar-hidden {
           margin: 0px 32px;
@@ -54,7 +55,7 @@ const TopBar: React.FC = () => {
         }
         @media only screen and (max-width: 600px) {
           .bottombar-link {
-            visibility: hidden;
+            visibility: visible;
           }
         }
       `}</style>
