@@ -3,6 +3,7 @@ import TopBar from './components/Navigation/TopBar';
 import BottomBar from './components/Navigation/BottomBar';
 import Intro from './components/Pages/Intro';
 import Games from './components/Pages/Games';
+import Restoration from './components/Pages/Restoration';
 import Mods from './components/Pages/Mods';
 import About from './components/Pages/About';
 import Martin from './components/Pages/Martin';
@@ -19,8 +20,9 @@ function App() {
             0: <Intro />,
             1: <Games />,
             2: <Mods />,
-            3: <About />,
-            4: <Martin />,
+            3: <Restoration />,
+            4: <About />,
+            5: <Martin />,
           }[page]
         }
       </div>

@@ -25,15 +25,21 @@ const TopBar: React.FC = () => {
     }
     return <></>;
   };
-  const handleAbout = () => {
+  const handleRestoration = () => {
     if (page != 3) {
       setPage(3);
     }
     return <></>;
   };
-  const handleMartin = () => {
+  const handleAbout = () => {
     if (page != 4) {
       setPage(4);
+    }
+    return <></>;
+  };
+  const handleMartin = () => {
+    if (page != 5) {
+      setPage(5);
     }
     return <></>;
   };
@@ -58,6 +64,9 @@ const TopBar: React.FC = () => {
           <Link onClick={() => handleMods()} className="topbar-page" to="/mods">
             MODS
           </Link>
+          <Link onClick={() => handleAbout()} className="topbar-page" to="/restoration">
+            RESTORATION
+          </Link>
           <Link onClick={() => handleAbout()} className="topbar-page" to="/about">
             ABOUT
           </Link>
@@ -73,6 +82,7 @@ const TopBar: React.FC = () => {
             <Route exact path="/" component={handleIntro}></Route>
             <Route exact path="/games" component={handleGames}></Route>
             <Route exact path="/mods" component={handleMods}></Route>
+            <Route exact path="/restoration" component={handleRestoration}></Route>
             <Route exact path="/about" component={handleAbout}></Route>
             <Route exact path="/martin" component={handleMartin}></Route>
           </Switch>

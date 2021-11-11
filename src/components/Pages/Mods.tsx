@@ -15,7 +15,7 @@ const Mods: React.FC = () => {
           className="box-text"
           href="https://steamcommunity.com/sharedfiles/filedetails/?id=1741500201"
         >
-          Expand UI for Europa Universalis 4
+          Expand UI for Europa Universalis 4 (1.30)
         </a>
         <img className="box-image" src="EU4Expand.jpg" alt="ExpandUI" width="200px"></img>
         <div className="box-image-text">
@@ -41,7 +41,7 @@ const Mods: React.FC = () => {
           className="box-text"
           href="https://steamcommunity.com/sharedfiles/filedetails/?id=1897059501"
         >
-          States UI for Europa Universalis 4
+          States UI for Europa Universalis 4 (1.30)
         </a>
         <img className="box-image" src="EU4States.jpg" alt="ExpandUI" width="200px"></img>
         <div className="box-image-text">
