@@ -37,12 +37,12 @@ const TopBar: React.FC = () => {
     }
     return <></>;
   };
-  const handleMartin = () => {
-    if (page != 5) {
-      setPage(5);
-    }
-    return <></>;
-  };
+  // const handleMartin = () => {
+  //   if (page != 5) {
+  //     setPage(5);
+  //   }
+  //   return <></>;
+  // };
 
   return (
     <div className="topbar">
@@ -70,21 +70,21 @@ const TopBar: React.FC = () => {
           <Link onClick={() => handleAbout()} className="topbar-page" to="/about">
             ABOUT
           </Link>
-          <Link onClick={() => handleMartin()} className="topbar-page-m" to="/martin">
+          {/* <Link onClick={() => handleMartin()} className="topbar-page-m" to="/martin">
             MARTIN
             <br />
             HELVIG
-          </Link>
-          <Link onClick={() => handleMartin()} className="topbar-page-d" to="/martin">
+          </Link> */}
+          {/* <Link onClick={() => handleMartin()} className="topbar-page-d" to="/martin">
             MARTIN HELVIG
-          </Link>
+          </Link> */}
           <Switch>
             <Route exact path="/" component={handleIntro}></Route>
             <Route exact path="/games" component={handleGames}></Route>
             <Route exact path="/mods" component={handleMods}></Route>
             <Route exact path="/restoration" component={handleRestoration}></Route>
             <Route exact path="/about" component={handleAbout}></Route>
-            <Route exact path="/martin" component={handleMartin}></Route>
+            {/* <Route exact path="/martin" component={handleMartin}></Route> */}
           </Switch>
         </div>
       </Router>

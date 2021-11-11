@@ -22,7 +22,7 @@ function App() {
             2: <Mods />,
             3: <Restoration />,
             4: <About />,
-            5: <Martin />,
+            // 5: <Martin />,
           }[page]
         }
       </div>

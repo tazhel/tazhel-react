@@ -241,17 +241,43 @@ const Restoration: React.FC = () => {
           .box {
             width: calc(100vw - 64px);
           }
+          .box-restoration {
+            margin: 16px 0px;
+            width: calc(100vw - 64px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #444444;
+            color: white;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          }
           .box-image {
             position: absolute;
             visibility: hidden;
+          }
+          .box-image-restoration {
+            width: 80%;
+            align-self: center;
+          }
+          .box-image-restoration-portrait {
+            width: auto;
+            height: 200px;
+            align-self: center;
           }
           .box-image-text {
             margin: 64px 0px 0px 64px;
           }
         }
         @media only screen and (max-width: 500px) {
-          .box {
-            height: 120px;
+          .box-restoration {
+            margin: 16px 0px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #444444;
+            color: white;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           }
           .box-image-text {
             position: absolute;
