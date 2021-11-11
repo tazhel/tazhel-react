@@ -6,7 +6,7 @@ import Games from './components/Pages/Games';
 import Restoration from './components/Pages/Restoration';
 import Mods from './components/Pages/Mods';
 import About from './components/Pages/About';
-import Martin from './components/Pages/Martin';
+// import Martin from './components/Pages/Martin';
 import useTazhelContext from './context/tazhelContext';
 
 function App() {
