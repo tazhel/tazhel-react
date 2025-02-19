@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import LogoAnim from '../../svg/LogoAnim.svg';
-import './Header.css';
+import './header.css';
 
 const Header: React.FC = () => {
     const location = useLocation();
