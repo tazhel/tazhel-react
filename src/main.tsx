@@ -1,14 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 import './index.css';
-import AboutPage from './pages/about-page/aboutPage';
-import GamesPage from './pages/games-page/gamesPage';
-import HomePage from './pages/home-page/homePage';
-import ModsPage from './pages/mods-page/modsPage';
-import OtherPage from './pages/other-page/otherPage';
+import AboutPage from './pages/about-page/AboutPage';
+import GamesPage from './pages/games-page/GamesPage';
+import HomePage from './pages/home-page/HomePage';
+import ModsPage from './pages/mods-page/ModsPage';
+import OtherPage from './pages/other-page/OtherPage';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
