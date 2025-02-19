@@ -1,6 +1,6 @@
 import '../../index.css';
 import LogoAnim from '../../svg/LogoAnim.svg';
-import './gamesPage.css';
+import './gamespage.css';
 
 const GamesPage: React.FC = () => {
     return (

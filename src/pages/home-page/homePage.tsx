@@ -1,5 +1,5 @@
 import '../../index.css';
-import './homePage.css';
+import './homepage.css';
 
 const HomePage: React.FC = () => {
     return (

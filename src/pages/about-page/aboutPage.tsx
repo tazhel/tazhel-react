@@ -1,6 +1,6 @@
 import '../../index.css';
 import LogoAnim from '../../svg/LogoAnim.svg';
-import './aboutPage.css';
+import './aboutpage.css';
 
 const AboutPage: React.FC = () => {
     return (
