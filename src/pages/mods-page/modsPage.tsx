@@ -1,5 +1,5 @@
 import '../../index.css';
-import './modspage.css';
+import './modsPage.css';
 
 const ModsPage: React.FC = () => {
     const handleLink = (link: string) => {

@@ -1,6 +1,6 @@
 import '../../index.css';
 import BwLogo from '../../svg/BwLogo.svg';
-import './otherpage.css';
+import './otherPage.css';
 
 const OtherPage: React.FC = () => {
     return (
