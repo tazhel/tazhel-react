@@ -1,0 +1,97 @@
+.mods-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mods-box {
+    margin: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 644px;
+    height: 200px;
+    background-color: #444444;
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mods-box-text {
+    font-size: 18px;
+    height: fit-content;
+    margin: 16px 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.mods-box-image {
+    margin: 64px 0px 0px 64px;
+    position: absolute;
+}
+
+.mods-box-image-text {
+    margin: 64px 0px 0px 284px;
+    position: absolute;
+    color: #dddddd;
+}
+
+.mods-box-button {
+    position: absolute;
+    align-self: flex-end;
+    margin: 148px 20px 20px 20px;
+    cursor: default;
+    background: #6fa720;
+    color: white;
+    width: 110px;
+    height: 34px;
+    border-radius: 4px;
+    border-style: none;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+}
+
+.mods-box-button:hover {
+    cursor: pointer;
+}
+
+.mods-logo {
+    margin: 24px 0px;
+    width: 640px;
+}
+
+@media only screen and (max-width: 700px) {
+    .mods-logo {
+        width: calc(100vw - 64px);
+    }
+
+    .mods-box {
+        width: calc(100vw - 64px);
+    }
+
+    .mods-box-image {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .mods-box-image-text {
+        margin: 64px 0px 0px 64px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .mods-box {
+        height: 120px;
+    }
+
+    .mods-box-image-text {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .mods-box-button {
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 68px 0px 20px 0px;
+    }
+}
