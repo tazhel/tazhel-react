@@ -19,9 +19,9 @@ const Header: React.FC = () => {
                 <Link to="/mods" className={`header-button ${location.pathname === '/mods' ? 'active' : ''}`}>
                     Mods
                 </Link>
-                {/* <Link to="/other" className={`header-button ${location.pathname === '/other' ? 'active' : ''}`}>
+                <Link to="/other" className={`header-button ${location.pathname === '/other' ? 'active' : ''}`}>
                     Other
-                </Link> */}
+                </Link>
                 <Link to="/about" className={`header-button ${location.pathname === '/about' ? 'active' : ''}`}>
                     About
                 </Link>
