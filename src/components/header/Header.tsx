@@ -5,6 +5,8 @@ import './header.css';
 const Header: React.FC = () => {
     const location = useLocation();
 
+    if (location.pathname === '/bryllup') return null;
+
     return (
         <header className="header-container">
             <Link to="/" className="header-logo-container">
