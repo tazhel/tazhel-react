@@ -1,40 +1,141 @@
+/* Hovedbakgrunn - lun, varm og elegant */
 .wedding-page {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* top of the screen */
+    align-items: center;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black; /* optional */
+    background: linear-gradient(135deg, #f5f0ea 0%, #e6ded4 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Gir en mer klassisk/fin bryllupsfølelse */
+    color: #3d342e;
 }
 
-.scroll-container {
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    animation: scroll-unroll 1s ease-out forwards;
+/* Selve kortet - større, mer luftig og elegant */
+.wedding-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 680px; /* Gjør at den føles mer som en ordentlig nettside på PC */
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 15px 35px rgba(100, 85, 75, 0.15);
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.scroll-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
+/* Overskrifter */
+.wedding-header h1 {
+    font-size: 2.5rem;
+    color: #6e473b; /* Varm høst/jordtone */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
 }
 
-@keyframes scroll-unroll {
-    0% {
-        height: 0;
-        opacity: 0;
+.welcome-text {
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #6e655f;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d1c4b9, transparent);
+    margin: 40px 0;
+}
+
+/* Seksjoner */
+.info-section {
+    margin-bottom: 40px;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; /* Renere skrift for brødtekst */
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a423d;
+}
+
+.info-section h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.4rem;
+    color: #8c594a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Ønskeliste-lenker */
+.wishlist-intro {
+    margin-bottom: 20px;
+}
+
+.text-link {
+    color: #8c594a;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.text-link:hover {
+    color: #5c3a30;
+}
+
+.wishlist-btn {
+    display: inline-block;
+    background-color: #8c594a;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 30px; /* Myke, runde kanter */
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(140, 89, 74, 0.2);
+    transition: all 0.2s ease;
+}
+
+.wishlist-btn:hover {
+    background-color: #73493c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(140, 89, 74, 0.3);
+}
+
+/* Kleskode-styling */
+.autumn-colors {
+    color: #bd5338; /* Fin høstfarge */
+    font-weight: 600;
+}
+
+/* Footer */
+.wedding-footer p {
+    font-size: 1.3rem;
+    color: #6e473b;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* Responsiv tilpasning for mobil */
+@media (max-width: 600px) {
+    .wedding-page {
+        padding: 15px;
     }
-    50% {
-        opacity: 1;
+
+    .wedding-card {
+        padding: 35px 20px;
+        border-radius: 16px;
     }
-    100% {
-        height: 100%;
-        opacity: 1;
+
+    .wedding-header h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-text {
+        font-size: 1.05rem;
+    }
+
+    .info-section {
+        font-size: 1rem;
     }
 }
