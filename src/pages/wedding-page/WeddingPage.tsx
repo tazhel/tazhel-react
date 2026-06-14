@@ -44,7 +44,12 @@ const WeddingPage: React.FC = () => {
                         </a>
                         .
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="wishlist-btn">
+                    <a
+                        href="https://www.onskelister.no/liste?id=k1p7ksFoDth60V2b9tHs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="wishlist-btn"
+                    >
                         Åpne Ønskeliste
                     </a>
                     <p />
