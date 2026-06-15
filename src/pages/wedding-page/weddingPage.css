@@ -102,6 +102,39 @@
     box-shadow: 0 6px 20px rgba(140, 89, 74, 0.3);
 }
 
+/* Styling for Toastmaster kontaktinfo */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #faf7f2; /* Svak, lun bakgrunnsfarge som rammer det inn */
+    border-radius: 12px;
+    border: 1px dashed #e6ded4;
+}
+
+.contact-link {
+    color: #8c594a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #5c3a30;
+    text-decoration: underline;
+}
+
+/* Litt ekstra luft over forlover-delen etter kontaktboksen */
+.co-hosts {
+    margin-top: 25px;
+}
+
 /* Kleskode-styling */
 .autumn-colors {
     color: #bd5338; /* Fin høstfarge */

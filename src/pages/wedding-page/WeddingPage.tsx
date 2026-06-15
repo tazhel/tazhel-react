@@ -20,9 +20,19 @@ const WeddingPage: React.FC = () => {
                     <h3>Gode Hjelpere</h3>
                     <p>
                         Den fantastiske toastmasteren vår for dagen er <strong>Kenny Kristiansen</strong>. Om du ønsker
-                        å holde tale eller har andre innslag, er det bare å ta kontakt med ham.
+                        å holde tale eller har andre innslag, er det bare å ta kontakt med ham:
                     </p>
-                    <p>
+
+                    <div className="contact-info">
+                        <a href="mailto:Kenny.andre.kristiansen@lyse.net" className="contact-link email-link">
+                            Kenny.andre.kristiansen@lyse.net
+                        </a>
+                        <a href="tel:+4795150966" className="contact-link phone-link">
+                            951 50 966
+                        </a>
+                    </div>
+
+                    <p className="co-hosts">
                         De fine forloverne våre er
                         <br />
                         <strong>Andreas Frafjord</strong> (for Martin) og <strong>Pauli Riveland</strong> (for Vilde).
